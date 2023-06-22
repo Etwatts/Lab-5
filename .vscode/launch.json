@@ -12,6 +12,24 @@
             "console": "integratedTerminal",
             "justMyCode": true,
             "args":["computer"]
+        },
+        {
+            "name": "Poke API",
+            "type": "python",
+            "request": "launch",
+            "program": "poke_api.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args":["PikaChu"]
+        },
+        {
+            "name": "Poke Paste",
+            "type": "python",
+            "request": "launch",
+            "program": "pokemon_paste.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args":["PikaChu"]
         }
     ]
 }
