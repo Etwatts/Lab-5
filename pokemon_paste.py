@@ -47,12 +47,12 @@ def get_paste_data(pokemon_info):
         (str, str): Title and body text for the PasteBin paste
     """    
     # Build the paste title
-    search_term = pokemon_info['ability'[1]].capitalize()
+    search_term = pokemon_info['search_term'].capitalize()
     title = f'{search_term}s Abilities'
     # Build the paste body text
-    body_text = 'lol'
-    #for abilities in pokemon_info['results']:
-       # body_text += abilities['abilities'] + '\n\n'
+    body_text = ''
+    for abilities in pokemon_info['results']:
+        body_text += abilities['abilities'] + '\n\n'
 
     return  (title, body_text)
 
